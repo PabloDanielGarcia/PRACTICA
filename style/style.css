@@ -60,12 +60,9 @@ p {
   margin: 10px;
 }
 
-
-
 /*index]*/
 
-
-.contenedor-imgindex{
+.contenedor-imgindex {
   height: 80vh;
   background-image: url("https://cdn.pixabay.com/photo/2023/01/10/21/31/trees-7710539_1280.jpg");
   display: flex;
@@ -75,18 +72,26 @@ p {
   background-size: cover;
   background-position: center center;
 }
-.contenedor-imgindex p, h1 {
+.contenedor-imgindex p,
+h1 {
   text-align: center;
   color: aliceblue;
   top: 50px;
   font-size: x-large;
-  box-shadow:  20px 10px 20px 10px #55ff5586;
+  box-shadow: 20px 10px 20px 10px #55ff5586;
+}
+.principal {
+  background-image: url("https://cdn.pixabay.com/photo/2023/01/10/21/31/trees-7710539_1280.jpg");
+  height: 50vh;
 
 }
-
-
-
-
+.principal h1, p{
+  color: antiquewhite;
+  font-size: medium;
+  background-color: #0000008a;
+  text-align: center;
+  align-items: center;
+}
 
 .youtube {
   display: flex;
@@ -145,25 +150,20 @@ h6 {
   text-align: center;
 }
 
-.imgNos img{
-
+.imgNos img {
   width: 100vh;
   margin: 50px;
-  
-  
 }
-.imgNos{
+.imgNos {
   display: flex;
   justify-content: center;
 }
 
-
 .fade-in-tl {
-	animation: fade-in-tl 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  animation: fade-in-tl 3s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
 }
 
-
- @keyframes fade-in-tl {
+@keyframes fade-in-tl {
   0% {
     transform: translateX(-50px) translateY(-50px);
     opacity: 0;
@@ -173,11 +173,6 @@ h6 {
     opacity: 1;
   }
 }
-
-
-
-
-
 
 @media screen and (max-width: 590px) {
   header .contenedor .nav .zona-nav {
